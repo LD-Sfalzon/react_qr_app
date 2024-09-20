@@ -24,8 +24,8 @@ const qrCodeHome = ({ flags }) => {
             src: "https://avatars.githubusercontent.com/u/8039656",
             x: undefined,
             y: undefined,
-            height: 124,
-            width: 124,
+            height: 88,
+            width: 88,
             opacity: 1,
             excavate: true,
           }}

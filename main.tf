@@ -195,12 +195,12 @@ resource "launchdarkly_feature_flag" "config_customer_logo" {
 
   variation_type = "string"
   variations {
-    value       = "https://www.link_to_your_logo.png"
-    name        = "Our Logo"
+    value       = "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Diet_Coke_Logo.svg/640px-Diet_Coke_Logo.svg.png"
+    name        = "Diet Coke"
   }
   variations {
-    value       = "https://www.link_to_another_image.png"
-    name        = "Some Other Image"
+    value       = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Coke_Zero_2021.svg/640px-Coke_Zero_2021.svg.png"
+    name        = "Coke Zero"
   }
 
   defaults {
