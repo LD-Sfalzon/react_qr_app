@@ -15,7 +15,7 @@ const qrCodeHome = ({ flags }) => {
       <div className="qr-wrapper">
         <QRCodeSVG value={QRURL} 
           title={"Title for my QR Code"}
-          size={256}
+          size={200}
           bgColor={"#ffffff"}
           fgColor={"#000000"}
           level={"H"}
