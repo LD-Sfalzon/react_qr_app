@@ -1,4 +1,4 @@
-import QRCode from "react-qr-code";
+import {QRCodeSVG} from 'qrcode.react';
 import { withLDConsumer } from "launchdarkly-react-client-sdk";
 
 //Change QRURL to the URL where you'll be hosting this app
@@ -13,7 +13,24 @@ const qrCodeHome = ({ flags }) => {
       <br />
       <span style={{ color: 'black' }}><center>Scan me!</center></span>
       <div className="qr-wrapper">
-        <QRCode value={QRURL} />
+        <QRCodeSVG value={QRURL} 
+          title={"Title for my QR Code"}
+          size={256}
+          bgColor={"#ffffff"}
+          fgColor={"#000000"}
+          level={"H"}
+          marginSize={0}
+          imageSettings={{
+            src: "https://avatars.githubusercontent.com/u/8039656",
+            x: undefined,
+            y: undefined,
+            height: 124,
+            width: 124,
+            opacity: 1,
+            excavate: true,
+          }}
+        
+        />
       </div>
     </div>
   ) : (
