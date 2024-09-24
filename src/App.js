@@ -24,7 +24,7 @@ function App() {
     };
     updateBackGroundColor();
   }, [configBackgroundColor]);
-
+//test
 
   useEffect(() => {
     addResponseMessage('Hi there! Ask me a question!');
