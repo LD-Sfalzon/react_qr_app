@@ -35,7 +35,7 @@ function App() {
       <div className="black-header">
         <HeaderLDLogo />
       </div>
-      
+
       <div className={headerStyle}>
         <Heart />
         <CustomerLogo />
