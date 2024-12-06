@@ -17,7 +17,7 @@ function App() {
     setHeaderStyle("gray-app-header");
     const updateBackGroundColor = () => {
       // Sets the className to "purple-app-header", "blue-app-header", etc.
-      const headerStyle = configBackgroundColor + "-app-header";
+      const headerStyle = "gray-app-header";
       setHeaderStyle(headerStyle);
 
       return configBackgroundColor;
@@ -36,7 +36,7 @@ function App() {
         <HeaderLDLogo />
       </div>
 
-      <div className={headerStyle}>
+      <div className={headerStyle} style={{ backgroundColor: configBackgroundColor }}>
         <Heart />
         <CustomerLogo />
         <QRCode />
