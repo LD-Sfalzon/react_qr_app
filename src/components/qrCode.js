@@ -1,19 +1,21 @@
-import {QRCodeSVG} from 'qrcode.react';
+import { QRCodeSVG } from "qrcode.react";
 import { withLDConsumer } from "launchdarkly-react-client-sdk";
 
 //Change QRURL to the URL where you'll be hosting this app
 const QRURL = "https://ld-sfalzon.github.io/react_qr_app/";
 
 const qrCodeHome = ({ flags }) => {
-
-    // The React SDK automatically converts flag keys with dashes and periods to camelCase.
-    // See this page for details: https://docs.launchdarkly.com/sdk/client-side/react/react-web#flag-keys
-    return flags.showQrCode ? (
+  // The React SDK automatically converts flag keys with dashes and periods to camelCase.
+  // See this page for details: https://docs.launchdarkly.com/sdk/client-side/react/react-web#flag-keys
+  return flags.showQrCode ? (
     <div>
       <br />
-      <span style={{ color: 'black' }}><center>Scan me!</center></span>
+      <span style={{ color: "black" }}>
+        <center>Scan me!</center>
+      </span>
       <div className="qr-wrapper">
-        <QRCodeSVG value={QRURL} 
+        <QRCodeSVG
+          value={QRURL}
           title={"Title for my QR Code"}
           size={200}
           bgColor={"#ffffff"}
@@ -29,7 +31,6 @@ const qrCodeHome = ({ flags }) => {
             opacity: 1,
             excavate: true,
           }}
-        
         />
       </div>
     </div>

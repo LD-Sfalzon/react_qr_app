@@ -1,7 +1,7 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
 import { useFlags } from "launchdarkly-react-client-sdk";
-import { addResponseMessage } from 'react-chat-widget';
+import { addResponseMessage } from "react-chat-widget";
 import Chatbot from "./components/chatbot";
 import QRCode from "./components/qrCode";
 import HeaderLDLogo from "./components/headerLogo";
@@ -24,10 +24,10 @@ function App() {
     };
     updateBackGroundColor();
   }, [configBackgroundColor]);
-//test
+  //test
 
   useEffect(() => {
-    addResponseMessage('Hi there! Ask me a question!');
+    addResponseMessage("Hi there! Ask me a question!");
   }, []);
 
   return (
@@ -36,7 +36,10 @@ function App() {
         <HeaderLDLogo />
       </div>
 
-      <div className={headerStyle} style={{ backgroundColor: configBackgroundColor }}>
+      <div
+        className={headerStyle}
+        style={{ backgroundColor: configBackgroundColor }}
+      >
         <Heart />
         <CustomerLogo />
         <QRCode />
